@@ -1,0 +1,10 @@
+{
+  "type": "number",
+  "title": { "en": "Discount", "ko": "할인액" },
+  "units": { "en": "₩", "ko": "원" },
+  "getable": true,
+  "setable": false,
+  "insights": false,
+  "min": 0,
+  "decimals": 0
+}

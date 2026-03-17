@@ -1,0 +1,11 @@
+{
+  "type": "number",
+  "title": { "en": "Total Bill", "ko": "청구금액" },
+  "units": { "en": "₩", "ko": "원" },
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "icon": "/assets/capabilities/won.svg",
+  "min": 0,
+  "decimals": 0
+}

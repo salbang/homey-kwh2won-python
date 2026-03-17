@@ -1,0 +1,37 @@
+{
+  "id": "bill_calculated",
+  "title": {
+    "en": "Electricity bill is calculated",
+    "ko": "전기요금이 계산됨"
+  },
+  "titleFormatted": {
+    "en": "Electricity bill is calculated",
+    "ko": "전기요금이 계산됨"
+  },
+  "tokens": [
+    {
+      "name": "total",
+      "type": "number",
+      "title": { "en": "Total bill (₩)", "ko": "청구금액 (원)" },
+      "example": 52340
+    },
+    {
+      "name": "kwh",
+      "type": "number",
+      "title": { "en": "Usage (kWh)", "ko": "사용량 (kWh)" },
+      "example": 350
+    },
+    {
+      "name": "forecast_kwh",
+      "type": "number",
+      "title": { "en": "Forecast usage (kWh)", "ko": "예상 사용량 (kWh)" },
+      "example": 420
+    },
+    {
+      "name": "forecast_won",
+      "type": "number",
+      "title": { "en": "Forecast bill (₩)", "ko": "예상 요금 (원)" },
+      "example": 65780
+    }
+  ]
+}

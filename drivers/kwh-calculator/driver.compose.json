@@ -1,0 +1,171 @@
+{
+  "name": {
+    "en": "Electricity Bill Calculator",
+    "ko": "전기요금 계산기"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "meter_kwh_input",
+    "meter_bill_total",
+    "meter_bill_basic",
+    "meter_bill_kwh",
+    "meter_bill_climate",
+    "meter_bill_fuel",
+    "meter_bill_vat",
+    "meter_bill_fund",
+    "meter_bill_discount",
+    "meter_forecast_kwh",
+    "meter_forecast_won",
+    "meter_check_info"
+  ],
+  "platforms": ["local"],
+  "connectivity": [],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "configure",
+      "template": "list_devices",
+      "navigation": {
+        "next": "list_devices"
+      },
+      "options": {
+        "singular": true
+      }
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "settings": [
+    {
+      "type": "group",
+      "label": {
+        "en": "Tariff Settings",
+        "ko": "요금 설정"
+      },
+      "children": [
+        {
+          "id": "pressure",
+          "type": "dropdown",
+          "label": {
+            "en": "Voltage Type",
+            "ko": "전압 구분"
+          },
+          "value": "low",
+          "values": [
+            { "id": "low", "label": { "en": "Low Voltage (Residential)", "ko": "가정용 저압" } },
+            { "id": "high", "label": { "en": "High Voltage (Residential)", "ko": "가정용 고압" } }
+          ]
+        },
+        {
+          "id": "checkDay",
+          "type": "dropdown",
+          "label": {
+            "en": "Meter Reading Day",
+            "ko": "검침일"
+          },
+          "value": "1",
+          "values": [
+            { "id": "1", "label": { "en": "1st", "ko": "1일" } },
+            { "id": "2", "label": { "en": "2nd", "ko": "2일" } },
+            { "id": "3", "label": { "en": "3rd", "ko": "3일" } },
+            { "id": "4", "label": { "en": "4th", "ko": "4일" } },
+            { "id": "5", "label": { "en": "5th", "ko": "5일" } },
+            { "id": "8", "label": { "en": "8th", "ko": "8일" } },
+            { "id": "9", "label": { "en": "9th", "ko": "9일" } },
+            { "id": "10", "label": { "en": "10th", "ko": "10일" } },
+            { "id": "11", "label": { "en": "11th", "ko": "11일" } },
+            { "id": "12", "label": { "en": "12th", "ko": "12일" } },
+            { "id": "15", "label": { "en": "15th", "ko": "15일" } },
+            { "id": "16", "label": { "en": "16th", "ko": "16일" } },
+            { "id": "17", "label": { "en": "17th", "ko": "17일" } },
+            { "id": "18", "label": { "en": "18th", "ko": "18일" } },
+            { "id": "19", "label": { "en": "19th", "ko": "19일" } },
+            { "id": "22", "label": { "en": "22nd", "ko": "22일" } },
+            { "id": "23", "label": { "en": "23rd", "ko": "23일" } },
+            { "id": "24", "label": { "en": "24th", "ko": "24일" } },
+            { "id": "25", "label": { "en": "25th", "ko": "25일" } },
+            { "id": "26", "label": { "en": "26th", "ko": "26일" } },
+            { "id": "0", "label": { "en": "End of month", "ko": "말일" } }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "label": {
+        "en": "Discount Settings",
+        "ko": "할인 설정"
+      },
+      "children": [
+        {
+          "id": "bigfamDcCfg",
+          "type": "dropdown",
+          "label": {
+            "en": "Large Family Discount",
+            "ko": "대가족 할인"
+          },
+          "value": "0",
+          "values": [
+            { "id": "0", "label": { "en": "Not applicable", "ko": "해당없음" } },
+            { "id": "1", "label": { "en": "5+ / 3+ children / Birth", "ko": "5인이상/3자녀이상/출산 가구" } },
+            { "id": "2", "label": { "en": "Life support equipment", "ko": "생명유지장치" } }
+          ]
+        },
+        {
+          "id": "welfareDcCfg",
+          "type": "dropdown",
+          "label": {
+            "en": "Welfare Discount",
+            "ko": "복지 할인"
+          },
+          "value": "0",
+          "values": [
+            { "id": "0", "label": { "en": "Not applicable", "ko": "해당없음" } },
+            { "id": "1", "label": { "en": "Patriots / Disabled", "ko": "유공자/장애인" } },
+            { "id": "2", "label": { "en": "Social welfare facility", "ko": "사회복지시설" } },
+            { "id": "3", "label": { "en": "Basic living (Medical)", "ko": "기초생활(생계/의료)" } },
+            { "id": "4", "label": { "en": "Basic living (Housing)", "ko": "기초생활(주거/교육)" } },
+            { "id": "5", "label": { "en": "Near-poverty", "ko": "차상위계층" } }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "label": {
+        "en": "Energy Input",
+        "ko": "전력 입력"
+      },
+      "children": [
+        {
+          "id": "energyKwh",
+          "type": "number",
+          "label": {
+            "en": "Monthly Energy (kWh)",
+            "ko": "월간 사용량 (kWh)"
+          },
+          "value": 0,
+          "min": 0,
+          "max": 99999,
+          "hint": {
+            "en": "Enter your monthly electricity consumption in kWh. You can also update this via Flow cards.",
+            "ko": "월간 전기 사용량을 kWh로 입력하세요. Flow 카드로도 업데이트할 수 있습니다."
+          }
+        }
+      ]
+    }
+  ]
+}

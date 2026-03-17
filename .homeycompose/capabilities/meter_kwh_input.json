@@ -1,0 +1,13 @@
+{
+  "type": "number",
+  "title": { "en": "Energy Usage", "ko": "전기 사용량" },
+  "units": { "en": "kWh", "ko": "kWh" },
+  "getable": true,
+  "setable": true,
+  "insights": true,
+  "icon": "/assets/capabilities/kwh.svg",
+  "min": 0,
+  "max": 99999,
+  "step": 0.1,
+  "decimals": 1
+}

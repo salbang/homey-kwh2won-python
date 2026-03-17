@@ -1,0 +1,35 @@
+{
+  "id": "com.kwh2won.korea",
+  "version": "1.0.0",
+  "compatibility": ">=12.1.0",
+  "sdk": 3,
+  "platforms": ["local"],
+  "name": {
+    "en": "Korea Electricity Bill Calculator",
+    "ko": "한국 전기요금 계산기"
+  },
+  "description": {
+    "en": "Calculate Korean residential electricity bills based on KEPCO tariffs",
+    "ko": "한국전력 가정용 전기요금을 계산합니다"
+  },
+  "category": ["energy"],
+  "brandColor": "#FF6B00",
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "kwh2won"
+  },
+  "contributors": {
+    "developers": [
+      { "name": "dugurs (original HA integration)" }
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/dugurs/kwh_to_won/issues"
+  },
+  "homepage": "https://github.com/dugurs/kwh_to_won"
+}

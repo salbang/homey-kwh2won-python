@@ -1,0 +1,10 @@
+{
+  "type": "number",
+  "title": { "en": "Forecast Bill", "ko": "예상 요금" },
+  "units": { "en": "₩", "ko": "원" },
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "min": 0,
+  "decimals": 0
+}

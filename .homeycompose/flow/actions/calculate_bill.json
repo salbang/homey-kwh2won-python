@@ -1,0 +1,64 @@
+{
+  "id": "calculate_bill",
+  "title": {
+    "en": "Calculate electricity bill",
+    "ko": "전기요금 계산"
+  },
+  "titleFormatted": {
+    "en": "Calculate bill for [[kwh]] kWh ([[pressure]])",
+    "ko": "[[kwh]] kWh 전기요금 계산 ([[pressure]])"
+  },
+  "args": [
+    {
+      "type": "number",
+      "name": "kwh",
+      "title": { "en": "Energy (kWh)", "ko": "사용량 (kWh)" },
+      "min": 0,
+      "max": 99999,
+      "step": 0.1
+    },
+    {
+      "type": "dropdown",
+      "name": "pressure",
+      "title": { "en": "Voltage type", "ko": "전압 구분" },
+      "values": [
+        { "id": "low", "label": { "en": "Low voltage", "ko": "저압" } },
+        { "id": "high", "label": { "en": "High voltage", "ko": "고압" } }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "name": "checkDay",
+      "title": { "en": "Meter reading day", "ko": "검침일" },
+      "values": [
+        { "id": "1", "label": { "en": "1st", "ko": "1일" } },
+        { "id": "11", "label": { "en": "11th", "ko": "11일" } },
+        { "id": "15", "label": { "en": "15th", "ko": "15일" } },
+        { "id": "0", "label": { "en": "End of month", "ko": "말일" } }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "name": "bigfamDc",
+      "title": { "en": "Large family", "ko": "대가족 할인" },
+      "values": [
+        { "id": "0", "label": { "en": "None", "ko": "없음" } },
+        { "id": "1", "label": { "en": "5+/3+ children", "ko": "5인이상/3자녀" } },
+        { "id": "2", "label": { "en": "Life support", "ko": "생명유지장치" } }
+      ]
+    },
+    {
+      "type": "dropdown",
+      "name": "welfareDc",
+      "title": { "en": "Welfare", "ko": "복지 할인" },
+      "values": [
+        { "id": "0", "label": { "en": "None", "ko": "없음" } },
+        { "id": "1", "label": { "en": "Patriots/Disabled", "ko": "유공자/장애인" } },
+        { "id": "2", "label": { "en": "Social welfare", "ko": "사회복지시설" } },
+        { "id": "3", "label": { "en": "Basic (Medical)", "ko": "기초(생계/의료)" } },
+        { "id": "4", "label": { "en": "Basic (Housing)", "ko": "기초(주거/교육)" } },
+        { "id": "5", "label": { "en": "Near-poverty", "ko": "차상위계층" } }
+      ]
+    }
+  ]
+}

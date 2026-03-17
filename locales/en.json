@@ -1,0 +1,14 @@
+{
+  "pair": {
+    "configure": {
+      "title": "Configure Electricity Calculator"
+    }
+  },
+  "settings": {
+    "pressure": "Voltage Type",
+    "checkDay": "Meter Reading Day",
+    "bigfamDcCfg": "Large Family Discount",
+    "welfareDcCfg": "Welfare Discount",
+    "energyKwh": "Monthly Usage (kWh)"
+  }
+}

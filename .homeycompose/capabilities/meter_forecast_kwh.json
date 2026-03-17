@@ -1,0 +1,10 @@
+{
+  "type": "number",
+  "title": { "en": "Forecast Usage", "ko": "예상 사용량" },
+  "units": { "en": "kWh", "ko": "kWh" },
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "min": 0,
+  "decimals": 1
+}

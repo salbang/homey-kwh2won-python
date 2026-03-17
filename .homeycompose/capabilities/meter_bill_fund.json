@@ -1,0 +1,10 @@
+{
+  "type": "number",
+  "title": { "en": "Industry Fund", "ko": "전력산업기반기금" },
+  "units": { "en": "₩", "ko": "원" },
+  "getable": true,
+  "setable": false,
+  "insights": false,
+  "min": 0,
+  "decimals": 0
+}

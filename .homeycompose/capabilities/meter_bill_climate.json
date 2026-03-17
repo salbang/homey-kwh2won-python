@@ -1,0 +1,10 @@
+{
+  "type": "number",
+  "title": { "en": "Climate Charge", "ko": "기후환경요금" },
+  "units": { "en": "₩", "ko": "원" },
+  "getable": true,
+  "setable": false,
+  "insights": false,
+  "min": 0,
+  "decimals": 0
+}

@@ -1,0 +1,21 @@
+{
+  "id": "bill_exceeds",
+  "title": {
+    "en": "Bill exceeds threshold",
+    "ko": "요금이 기준을 초과"
+  },
+  "titleFormatted": {
+    "en": "Bill exceeds [[threshold]] ₩",
+    "ko": "요금이 [[threshold]] 원을 초과"
+  },
+  "args": [
+    {
+      "type": "number",
+      "name": "threshold",
+      "title": { "en": "Amount (₩)", "ko": "금액 (원)" },
+      "min": 0,
+      "max": 9999999,
+      "step": 1000
+    }
+  ]
+}

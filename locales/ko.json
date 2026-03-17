@@ -1,0 +1,14 @@
+{
+  "pair": {
+    "configure": {
+      "title": "전기요금 계산기 설정"
+    }
+  },
+  "settings": {
+    "pressure": "전압 구분",
+    "checkDay": "검침일",
+    "bigfamDcCfg": "대가족 할인",
+    "welfareDcCfg": "복지 할인",
+    "energyKwh": "월간 사용량 (kWh)"
+  }
+}

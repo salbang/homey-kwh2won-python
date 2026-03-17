@@ -1,0 +1,9 @@
+{
+  "type": "number",
+  "title": { "en": "Fuel Adjustment", "ko": "연료비조정액" },
+  "units": { "en": "₩", "ko": "원" },
+  "getable": true,
+  "setable": false,
+  "insights": false,
+  "decimals": 0
+}
